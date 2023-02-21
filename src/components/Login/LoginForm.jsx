@@ -33,8 +33,9 @@ const LoginFrom = ({setUserData}) => {
     } else {
         seterrtxt('')
         setUserData(value);
+        localStorage.setItem('user', JSON.stringify(value))
     }
-  };
+  }
   return (
     <form>
       <div className="input_group">
